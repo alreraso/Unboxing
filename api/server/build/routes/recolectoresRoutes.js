@@ -8,7 +8,10 @@ class RecolectoresRoutes {
         this.config();
     }
     config() {
-        this.router.get('/', recolectoresControllers_1.recolectoresController.index);
+        this.router.get('/', recolectoresControllers_1.recolectoresController.list);
+        this.router.post('/', recolectoresControllers_1.recolectoresController.create);
+        this.router.put('/:id', recolectoresControllers_1.recolectoresController.update);
+        this.router.delete('/:id', recolectoresControllers_1.recolectoresController.delete);
     }
 }
 const recolectoresRoutes = new RecolectoresRoutes();

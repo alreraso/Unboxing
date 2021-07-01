@@ -10,7 +10,11 @@ class RecolectoresRoutes {
     }
 
     config(): void {
-        this.router.get('/', recolectoresController.index);
+        this.router.get('/', recolectoresController.list);
+        this.router.post('/', recolectoresController.create);
+        this.router.put('/:id', recolectoresController.update);
+        this.router.delete('/:id', recolectoresController.delete);
+
     }
 
 }

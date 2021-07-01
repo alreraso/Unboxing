@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = {
     database: {
         host: 'localhost',
-        user: 'admin',
+        user: 'root',
         password: 'Rene1234$',
         database: 'Unboxing'
     }
