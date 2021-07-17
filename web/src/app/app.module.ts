@@ -11,6 +11,9 @@ import { WhatrecyclingComponent } from './components/whatrecycling/whatrecycling
 import { BogotarecyclingComponent } from './components/bogotarecycling/bogotarecycling.component';
 import { CartonrecyclingComponent } from './components/cartonrecycling/cartonrecycling.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegistroComponent } from './components/registro/registro.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     WhatrecyclingComponent,
     BogotarecyclingComponent,
     CartonrecyclingComponent,
-    NavbarComponent
+    NavbarComponent,
+    LoginComponent,
+    RegistroComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,21 @@
+.btn-danger{
+    background-color: red;
+    border-color:red;
+    font-size: large;
+}
+
+.bg-btn {
+    background-color: #B6C867;
+    border-color: #B6C867;
+    font-size: large;
+}
+
+.font{
+    color: white;
+    font-size: x-large;
+    font-weight: 400;
+}
+
+.bg-company-gren1 {
+    background-color: #01937C;
+}

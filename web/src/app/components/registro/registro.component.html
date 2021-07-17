@@ -1,0 +1,119 @@
+<app-navbar></app-navbar>
+<br>
+<div class="container">
+      <div class="card text-center">
+        <div class="card-header bg-company-gren1 font">
+          Registrarse
+        </div>
+        <div class="card-body">
+            <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Recolector</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Conjunto</button>
+            </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="col">
+                    <form class="form-control " action="">
+                        <div class="row">
+                            <i class="fas fa-recycle fa-8x"></i>
+                            <div class="col">
+                                <br>
+                                <div class="form-floating mb-3">
+                                    <input type="name" class="form-control" id="floatingInput" placeholder="Juan Perez">
+                                    <label for="floatingInput">Nombre</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="floatingPassword" placeholder="name@example.com">
+                                    <label for="floatingPassword">Correo electrónico</label>
+                                </div>
+                                <br>
+                                <div class="form-floating">
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                    <label for="floatingPassword">Contraseña</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <br>
+                                <div class="form-floating mb-3">
+                                    <input type="telefono" class="form-control" id="floatingInput" placeholder="celular">
+                                    <label for="floatingInput">Teléfono celular</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="email2" class="form-control" id="floatingPassword" placeholder="Password">
+                                    <label for="floatingPassword">Confirmar correo electrónico</label>
+                                </div>
+                                <br>
+                                <div class="form-floating">
+                                    <input type="password2" class="form-control" id="floatingPassword" placeholder="Password2">
+                                    <label for="floatingPassword">Confirmar contraseña</label>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <a class="btn btn-primary btn-danger " href="/" role="button">Cancelar</a>
+                        <a class="btn btn-primary bg-btn " href="/perfilrecolector" role="button">registrarse</a>
+                    </form>
+                </div>
+                <p class="fw-lighter">*Al registrarse acepta terminos y condiciones</p>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="col">
+                    <form class="form-control " action="">
+                        <div class="row">
+                            <i class="fas fa-dumpster fa-8x"></i>
+                            <div class="col">
+                                <br>
+                                <div class="form-floating mb-3">
+                                    <input type="nombreconjunto" class="form-control" id="floatingInput" placeholder="conjunto1">
+                                    <label for="floatingInput">Nombre del conjunto</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="telefono" class="form-control" id="floatingInput" placeholder="celular">
+                                    <label for="floatingInput">Teléfono fijo</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="floatingPassword" placeholder="name@example.com">
+                                    <label for="floatingPassword">Correo electrónico</label>
+                                </div>
+                                <br>
+                                <div class="form-floating">
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                    <label for="floatingPassword">Contraseña</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <br>
+                                <div class="form-floating mb-3">
+                                    <input type="direccion" class="form-control" id="floatingInput" placeholder="direccion">
+                                    <label for="floatingInput">Dirección</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="telefono" class="form-control" id="floatingInput" placeholder="celular">
+                                    <label for="floatingInput">Teléfono celular</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="email2" class="form-control" id="floatingPassword" placeholder="Password">
+                                    <label for="floatingPassword">Confirmar correo electrónico</label>
+                                </div>
+                                <br>
+                                <div class="form-floating">
+                                    <input type="password2" class="form-control" id="floatingPassword" placeholder="Password2">
+                                    <label for="floatingPassword">Confirmar contraseña</label>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="fw-bold">*Uno de nuestros asesores lo contactara para confirmar su identidad como conjunto*</p>
+                        <a class="btn btn-primary btn-danger " href="/" role="button">Cancelar</a>
+                        <a class="btn btn-primary bg-btn " href="/" role="button">Enviar datos</a>
+                    </form>
+                </div>
+                <p class="fw-lighter">*Al registrarse acepta terminos y condiciones</p>
+            </div>
+            </div>
+        </div>
+      </div>
+</div>
+<br>
+<app-footer></app-footer>
