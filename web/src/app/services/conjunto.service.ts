@@ -15,6 +15,7 @@ export class ConjuntoService {
   ) { }
 
   createUserConjunto(user:User){
+    console.log(user)
     return this.http.post(`${this.API_URI}/register`,user);
   }
 

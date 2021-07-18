@@ -3,5 +3,5 @@ export interface User {
     publicId?:number;
     email?:string;
     password?:string;
-    userType?:number;
+    type?:number;
 }   
