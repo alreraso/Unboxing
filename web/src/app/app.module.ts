@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {FormsModule }from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import { ProfileComponent } from './components/profile/profile.component';
+
+import{ RecolectorService } from './services/recolector.service'
+import{ ConjuntoService } from './services/conjunto.service'
+import{ AgregarrecolectorService } from './services/agregarrecolector.service'
 
 @NgModule({
   declarations: [
@@ -32,9 +37,13 @@ import { ProfileComponent } from './components/profile/profile.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
-  providers: [],
+  providers: [
+    RecolectorService,
+    ConjuntoService,
+    AgregarrecolectorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

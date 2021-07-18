@@ -15,29 +15,29 @@
             <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 <div class="col">
-                    <form class="form-control " action="">
+                    <form class="form-control">
                         <div class="row">
                             <i class="fas fa-recycle fa-8x"></i>
                             <div class="col">
                                 <br>
                                 <div class="form-floating mb-3">
-                                    <input type="name" class="form-control" id="floatingInput" placeholder="Juan Perez">
+                                    <input type="text" [(ngModel)]="recolector.name" name="nombre" class="form-control" id="floatingInput" placeholder="Juan Perez" >
                                     <label for="floatingInput">Nombre</label>
                                 </div>
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="floatingPassword" placeholder="name@example.com">
+                                    <input type="email" [(ngModel)]="user.email" name="correo" class="form-control" id="floatingPassword" placeholder="name@example.com">
                                     <label for="floatingPassword">Correo electrónico</label>
                                 </div>
                                 <br>
                                 <div class="form-floating">
-                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                    <input type="password" [(ngModel)]="user.password"name="contraseña"class="form-control" id="floatingPassword" placeholder="Password">
                                     <label for="floatingPassword">Contraseña</label>
                                 </div>
                             </div>
                             <div class="col">
                                 <br>
                                 <div class="form-floating mb-3">
-                                    <input type="telefono" class="form-control" id="floatingInput" placeholder="celular">
+                                    <input type="telefono" [(ngModel)]="recolector.telefono" name ="telefono" class="form-control" id="floatingInput" placeholder="celular">
                                     <label for="floatingInput">Teléfono celular</label>
                                 </div>
                                 <div class="form-floating">
@@ -46,14 +46,14 @@
                                 </div>
                                 <br>
                                 <div class="form-floating">
-                                    <input type="password2" class="form-control" id="floatingPassword" placeholder="Password2">
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password2">
                                     <label for="floatingPassword">Confirmar contraseña</label>
                                 </div>
                             </div>
                         </div>
                         <br>
                         <a class="btn btn-primary btn-danger " href="/" role="button">Cancelar</a>
-                        <a class="btn btn-primary bg-btn " href="/perfilrecolector" role="button">registrarse</a>
+                        <a class="btn btn-primary bg-btn " (click)="registrarRecolector()">registrarse</a>
                     </form>
                 </div>
                 <p class="fw-lighter">*Al registrarse acepta terminos y condiciones</p>
@@ -66,32 +66,32 @@
                             <div class="col">
                                 <br>
                                 <div class="form-floating mb-3">
-                                    <input type="nombreconjunto" class="form-control" id="floatingInput" placeholder="conjunto1">
+                                    <input type="nombreconjunto" [(ngModel)]="conjunto.name" name ="nombre" class="form-control" id="floatingInput" placeholder="conjunto1">
                                     <label for="floatingInput">Nombre del conjunto</label>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input type="telefono" class="form-control" id="floatingInput" placeholder="celular">
-                                    <label for="floatingInput">Teléfono fijo</label>
+                                    <input type="direccion" [(ngModel)]="conjunto.direccion" name ="direccion" class="form-control" id="floatingInput" placeholder="direccion">
+                                    <label for="floatingInput">Dirección</label>
                                 </div>
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="floatingPassword" placeholder="name@example.com">
+                                    <input type="email" [(ngModel)]="user.email" name="correo" class="form-control" id="floatingPassword" placeholder="name@example.com">
                                     <label for="floatingPassword">Correo electrónico</label>
                                 </div>
                                 <br>
                                 <div class="form-floating">
-                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                    <input type="password" [(ngModel)]="user.password"name="contraseña" class="form-control" id="floatingPassword" placeholder="Password">
                                     <label for="floatingPassword">Contraseña</label>
                                 </div>
                             </div>
                             <div class="col">
                                 <br>
                                 <div class="form-floating mb-3">
-                                    <input type="direccion" class="form-control" id="floatingInput" placeholder="direccion">
-                                    <label for="floatingInput">Dirección</label>
+                                    <input type="telefono" [(ngModel)]="conjunto.telefono" name ="telefono" class="form-control" id="floatingInput" placeholder="telefono">
+                                    <label for="floatingInput">Teléfono</label>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input type="telefono" class="form-control" id="floatingInput" placeholder="celular">
-                                    <label for="floatingInput">Teléfono celular</label>
+                                    <input type="confirmadireccion" class="form-control" id="floatingInput" placeholder="confirmadireccion">
+                                    <label for="floatingInput">Confirmar dirección</label>
                                 </div>
                                 <div class="form-floating">
                                     <input type="email2" class="form-control" id="floatingPassword" placeholder="Password">
@@ -106,7 +106,7 @@
                         </div>
                         <p class="fw-bold">*Uno de nuestros asesores lo contactara para confirmar su identidad como conjunto*</p>
                         <a class="btn btn-primary btn-danger " href="/" role="button">Cancelar</a>
-                        <a class="btn btn-primary bg-btn " href="/" role="button">Enviar datos</a>
+                        <a class="btn btn-primary bg-btn " role="button" (click)="registrarConjunto()">Enviar datos</a>
                     </form>
                 </div>
                 <p class="fw-lighter">*Al registrarse acepta terminos y condiciones</p>
