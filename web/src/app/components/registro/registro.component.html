@@ -53,7 +53,7 @@
                             </div>
                             <br>
                             <a class="btn btn-primary btn-danger " href="/" role="button">Cancelar</a>
-                            <a class="btn btn-primary bg-btn " (click)="registrarRecolector()">registrarse</a>
+                            <a class="btn btn-primary bg-btn " (click)="registrarRecolector()" data-bs-toggle="modal" data-bs-target="#exampleModal">registrarse</a>
                         </form>
                     </div>
                     <p class="fw-lighter">*Al registrarse acepta terminos y condiciones</p>
@@ -106,7 +106,7 @@
                             </div>
                             <p class="fw-bold">*Uno de nuestros asesores lo contactara para confirmar su identidad como conjunto*</p>
                             <a class="btn btn-primary btn-danger " href="/" role="button">Cancelar</a>
-                            <a class="btn btn-primary bg-btn " role="button" (click)="registrarConjunto()">Enviar datos</a>
+                            <a class="btn btn-primary bg-btn " role="button" (click)="registrarConjunto()" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar datos</a>
                         </form>
                     </div>
                     <p class="fw-lighter">*Al registrarse acepta terminos y condiciones</p>
@@ -117,3 +117,24 @@
 </div>
 <br>
 <app-footer></app-footer>
+
+
+<!-- Modal con click -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content modal-font">
+        <div class="modal-header bg-company-gren1 ">
+          <h5 class="modal-title font" id="exampleModalLabel">Unboxing</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          El usuario fue creado correctamente
+        </div>
+        <div class="modal-footer">
+            <a type="button" class="btn btn-danger" href="/">cerrar</a>
+            <a type="button" class="btn btn-primary bg-btn"  href="/login">Iniciar sesion</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
