@@ -20,7 +20,9 @@ import { ProfileComponent } from './components/profile/profile.component';
 import{ RecolectorService } from './services/recolector.service'
 import{ ConjuntoService } from './services/conjunto.service'
 import{ AgregarrecolectorService } from './services/agregarrecolector.service';
-import { ProfiledualComponent } from './components/profiledual/profiledual.component'
+import { ProfiledualComponent } from './components/profiledual/profiledual.component';
+import { AdminhomeComponent } from './components/adminhome/adminhome.component';
+import { StatisticsComponent } from './components/statistics/statistics.component'
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { ProfiledualComponent } from './components/profiledual/profiledual.compo
     LoginComponent,
     RegistroComponent,
     ProfileComponent,
-    ProfiledualComponent
+    ProfiledualComponent,
+    AdminhomeComponent,
+    StatisticsComponent
   ],
   imports: [
     BrowserModule,

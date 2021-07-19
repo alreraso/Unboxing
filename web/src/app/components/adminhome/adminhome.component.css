@@ -1,0 +1,17 @@
+.bg-company-gren1 {
+    background-color: #01937C;
+    border: #01937C;
+}
+
+.bg-company-gren2 {
+    background-color: #FFC074;
+}
+.font{
+    font-size: x-large;
+    font-weight: 400;
+    color: white;
+}
+
+.text-green{
+    color: #FFC074;
+}
