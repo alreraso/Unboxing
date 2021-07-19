@@ -19,7 +19,8 @@ import { ProfileComponent } from './components/profile/profile.component';
 
 import{ RecolectorService } from './services/recolector.service'
 import{ ConjuntoService } from './services/conjunto.service'
-import{ AgregarrecolectorService } from './services/agregarrecolector.service'
+import{ AgregarrecolectorService } from './services/agregarrecolector.service';
+import { ProfiledualComponent } from './components/profiledual/profiledual.component'
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import{ AgregarrecolectorService } from './services/agregarrecolector.service'
     NavbarComponent,
     LoginComponent,
     RegistroComponent,
-    ProfileComponent
+    ProfileComponent,
+    ProfiledualComponent
   ],
   imports: [
     BrowserModule,
