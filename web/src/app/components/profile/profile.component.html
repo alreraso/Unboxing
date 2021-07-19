@@ -42,11 +42,92 @@
         
         
         <div class="col col-6 col-sm-2">
-            <i class="far fa-user-alt  fa-4x"></i>
-            Name recolector
-            <a class="btn btn-danger tn-sm" href="/" role="button">Cerrar sesion</a>
+            <div class="row">
+                <div class="col text-white">
+                    Bienvenido 
+                    Name 
+                </div>
+                <div class="col">
+                    <i class="far fa-user-alt  fa-3x"></i>
+                </div>
+            </div> 
+            <a class="btn btn-danger tn-sm" href="/" role="button">Cerrar sesión</a>
         </div>
     </div>
 </nav>
-
+<br>
+<div class="container text-green">
+    <h3 >Mis puntos de Recolección</h3>
+</div>
+<div class="container">
+    <div class="card text-center ">
+        <div class="card-header bg-company-gren1 font">
+          Información de recolección
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                      <th scope="col">Nombre del conjunto</th>
+                      <th scope="col">Dirección del conjunto</th>
+                      <th scope="col">Dia de Recolección</th>
+                      <th scope="col">Hora de Recolección</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Murano 2</td>
+                        <td>Cra. 50 #150A-45</td>
+                        <td>3</td>
+                        <td>06:00</td>
+                    </tr>
+                    <tr>
+                        <td>Malaga</td>
+                        <td>Cra. 50 #150A-50</td>
+                        <td>3</td>
+                        <td>06:00</td>
+                    </tr>
+                    <tr>
+                        <td>Murano 1</td>
+                        <td>Cl. 152 #12- 12</td>
+                        <td>4</td>
+                        <td>06:00</td>
+                    </tr>
+                     <tr>   
+                        <td>Mazuren 3</td>
+                        <td>Cl. 152 #54-28</td>
+                        <td>5</td>
+                        <td>06:00</td>
+                    </tr>
+                    <tr>
+                        <td>Mazuren 2</td>
+                        <td>Cl. 152a #54-73</td>
+                        <td>5</td>
+                        <td>06:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+            <div class="container">
+                <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                    <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </symbol>
+                </svg>
+                <div class="alert alert-warning d-flex align-items-center" role="alert">
+                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+                    <div>
+                    Los dias de recolección estan numerados del 1 al 7 empezando en lunes
+                    </div>
+                </div>
+                <div class="alert alert-warning d-flex align-items-center" role="alert">
+                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+                    <div>
+                    El formato de hora es 24 hr
+                    </div>
+                </div>
+            </div>
+      </div>    
+</div>
+<br>
 <app-footer></app-footer>

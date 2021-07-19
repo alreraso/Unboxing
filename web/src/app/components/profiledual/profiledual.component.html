@@ -42,10 +42,70 @@
         
         
         <div class="col col-6 col-sm-2">
-            <i class="far fa-user-alt  fa-4x"></i>
-            Name recolector
-            <a class="btn btn-danger tn-sm" href="/" role="button">Cerrar sesion</a>
+            <div class="row">
+                <div class="col text-white">
+                    Bienvenido 
+                    Name 
+                </div>
+                <div class="col">
+                    <i class="fas fa-home fa-3x" ></i>
+                </div>
+            </div> 
+            <a class="btn btn-danger tn-sm" href="/" role="button">Cerrar sesión</a>
         </div>
     </div>
 </nav>
+<br>
+<div class="container text-green">
+    <h3 >Mis Recolectores asociados</h3>
+</div>
+<div class="container">
+    <div class="card text-center ">
+        <div class="card-header bg-company-gren1 font">
+          Información de recolección
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                      <th scope="col">Nombre del Recolector</th>
+                      <th scope="col">Telefono del Recolector</th>
+                      <th scope="col">Dia de Recolección</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juan Cortez</td>
+                        <td>3045809880</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Diego Uran</td>
+                        <td>3003386292</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Lopez</td>
+                        <td>3133005804</td>
+                        <td>7</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container">
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </symbol>
+            </svg>
+            <div class="alert alert-warning d-flex align-items-center" role="alert">
+                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+                <div>
+                Los dias de recolección estan numerados del 1 al 7 empezando en lunes
+                </div>
+            </div>
+        </div>
+      </div>    
+</div>
+<br>
 <app-footer></app-footer>

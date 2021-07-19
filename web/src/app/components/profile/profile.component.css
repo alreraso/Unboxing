@@ -8,4 +8,9 @@
 .font{
     font-size: x-large;
     font-weight: 400;
+    color: white;
+}
+
+.text-green{
+    color: #FFC074;
 }
