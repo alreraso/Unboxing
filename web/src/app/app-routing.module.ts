@@ -4,6 +4,7 @@ import { BogotarecyclingComponent } from './components/bogotarecycling/bogotarec
 import { CartonrecyclingComponent } from './components/cartonrecycling/cartonrecycling.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { ProfileComponent } from './components/profile/profile.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import { WhatrecyclingComponent } from './components/whatrecycling/whatrecycling.component';
 import { WhyrecyclingComponent } from './components/whyrecycling/whyrecycling.component';
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path:'registro',
     component: RegistroComponent
+  },
+  {
+    path:'profile',
+    component: ProfileComponent
   }
 ];
 

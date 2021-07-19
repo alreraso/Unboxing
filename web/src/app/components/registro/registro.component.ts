@@ -52,7 +52,7 @@ export class RegistroComponent implements OnInit {
     delete this.recolector.publicId;
     this.user.type = 1;
     console.log(this.user)
-    /* this.recolectorService.createUserColector(this.user).subscribe(
+    /* this.recolectorService.createUserColector(this.user).subscribe(  
       res=>{
         console.log(res)
       },
@@ -67,6 +67,7 @@ export class RegistroComponent implements OnInit {
     delete this.conjunto.id;
     delete this.conjunto.publicId;
     this.user.type = 2;
+    console.log(this.user)
     /* this.conjuntoService.createUserConjunto(this.user).subscribe(
       res=>{
         console.log(res)
